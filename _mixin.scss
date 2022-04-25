@@ -16,11 +16,14 @@
 @mixin btn{
     
     background: v.$bg-color; 
+    color: v.$grey-color-txt;
     padding: 0.938rem 2rem;
     border: 1px solid v.$grey-color-txt;
     font-size: 0.75rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
     
     &:hover{

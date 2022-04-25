@@ -87,7 +87,7 @@ body {
 .intro__me__box:hover > img {
   background-color: #32a390;
 }
-.intro__me__box:hover > img + button {
+.intro__me__box:hover > img + a {
   background-color: hsl(167deg, 36%, 54%);
 }
 .intro__me__logo {
@@ -95,13 +95,14 @@ body {
   padding: 1.063rem;
 }
 .intro__me__btn {
+  display: flex;
+  align-items: center;
   padding: 1.063rem 2.5rem;
   background-color: hsl(205deg, 41%, 21%);
   border: none;
-}
-.intro__me__btn a {
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 10px;
   color: hsl(0deg, 0%, 98%);
   letter-spacing: 0.1rem;
 }
@@ -147,11 +148,14 @@ body {
 }
 .me__btn {
   background: hsl(0deg, 0%, 98%);
+  color: #5b5a64;
   padding: 0.938rem 2rem;
   border: 1px solid #5b5a64;
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
   margin-bottom: 1.875rem;
 }
@@ -186,11 +190,14 @@ body {
 
 .contact-me__btn {
   background: hsl(0deg, 0%, 98%);
+  color: #5b5a64;
   padding: 0.938rem 2rem;
   border: 1px solid #5b5a64;
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 .contact-me__btn:hover {
@@ -293,11 +300,14 @@ body {
 
 .proj__btn {
   background: hsl(0deg, 0%, 98%);
+  color: #5b5a64;
   padding: 0.938rem 2rem;
   border: 1px solid #5b5a64;
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 .proj__btn:hover {
@@ -345,11 +355,14 @@ body {
 
 .proj-rev__btn {
   background: hsl(0deg, 0%, 98%);
+  color: #5b5a64;
   padding: 0.938rem 2rem;
   border: 1px solid #5b5a64;
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 .proj-rev__btn:hover {
@@ -404,12 +417,16 @@ body {
 .pres-website__btn {
   margin-top: 1rem;
   margin-bottom: 3rem;
+  display: inline-block;
   background: hsl(0deg, 0%, 98%);
+  color: #5b5a64;
   padding: 0.938rem 2rem;
   border: 1px solid #5b5a64;
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 .pres-website__btn:hover {
