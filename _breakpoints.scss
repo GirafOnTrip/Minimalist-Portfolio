@@ -1,0 +1,17 @@
+$breakpoints: (
+
+    "tablet": 1135px,
+    "mobile": 700px,
+);
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, "tablet")){
+    @content
+    }
+};
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, "mobile")){
+    @content
+    }  
+};

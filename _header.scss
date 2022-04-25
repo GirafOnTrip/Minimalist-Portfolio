@@ -1,0 +1,48 @@
+
+@use 'variables' as v;
+
+/* HEADER */
+
+.top{
+
+   padding-top: 4rem; 
+   
+   &__nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+   &__list > li{
+
+    display: inline;
+    list-style: none;
+    padding-left: 2.5rem;
+   }
+
+   &__list__menu {
+
+    text-decoration: none;
+    color: v.$g-dark-blue;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.75rem;
+
+        &:hover{
+
+            color: v.$sligh-cyan;
+        }
+   }
+}
+
+.nav-mobile{
+
+    display:none;
+}
+
+
+
+
+
+

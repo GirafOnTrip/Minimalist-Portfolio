@@ -1,0 +1,101 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+
+/* START PROJECT PAGE */
+/* Start param fisrt img section */
+
+.project__img{
+    
+    width: 100%;
+    height: auto;
+    margin-top: 5.875rem;         
+    margin-bottom: 7.188rem
+}
+
+/* End param fisrt img section */
+/* Start param project presentation section */
+
+.pres {
+    
+    display:flex;
+    max-width: fit-content;
+}
+
+.pres-website{
+        
+    max-width: 21.875rem;
+    height: fit-content;
+    margin-right: 7.813rem; 
+    border-top: 1px solid v.$light-grey;
+    border-bottom: 1px solid v.$light-grey;
+    
+    &__title{
+        
+        margin-top: 3.125rem;
+        margin-bottom: 1.875rem; 
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        font-family: v.$font-title;
+        font-weight: 600;
+        color: v.$g-dark-blue;
+    }
+    
+    &__txt{
+        
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        color: v.$grey-color-txt;
+    }
+    
+    &__txt-color{
+        
+        color: v.$sligh-cyan;
+        line-height: 3
+    }
+}
+
+.pres-website__btn{
+    
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    @include m.btn; 
+}
+
+.pres-project{
+        
+    max-width: 39.688rem;
+    max-height: 74.5rem;
+    
+    &__title{
+        
+        font-family: v.$font-title;
+        font-weight: 600;
+        color: v.$g-dark-blue;
+        font-size: 1.875rem;
+        margin-bottom: 1.75rem;
+    }
+    
+    &__txt{
+        
+        line-height: 1.9;
+        margin-bottom: 2.5rem;
+        color: v.$grey-color-txt;
+    }
+    
+    &__img{
+        
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem
+    }  
+}
+
+/* End param project presentation section */
+/* Start next-previous nav */
+
+@include m.next-previous;
+
+/* End next-previous nav */
+/* END PROJECT PAGE */
+

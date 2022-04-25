@@ -1,0 +1,505 @@
+@use 'breakpoints' as *;
+@use 'variables' as v;
+
+
+/* MEDIAQUERIES -- TABLET */ 
+
+@include tablet{
+    
+    /* reset */
+    
+    .container{
+        
+        width: 680px;
+    }
+    
+    /* HOMEPAGE */
+    
+    .intro{
+        
+        &__box__img{
+            
+            content: url(/images/homepage/tablet/image-homepage-hero.jpg);
+        }
+        
+        &__me{
+            
+            width: 38.375rem;
+            height: 19.375rem;
+        }
+    }   
+    
+    #about-me{
+        
+        margin-bottom: 6.25rem;
+        
+        .about-me__box__img{
+            
+            content: url(/images/homepage/tablet/image-homepage-profile.jpg);
+        }
+    }
+    
+    .me{
+        
+        margin-left: 4.375rem;
+        
+        &__txt{
+            
+            margin-bottom: 2.2rem;
+        }
+    }
+    
+    /* PORTFOLIO */
+    
+    .box-proj__img1{
+        
+        content:url(/images/portfolio/tablet/image-portfolio-manage.jpg);
+    }
+    
+    .box-proj__img2{
+        
+        content:url(/images/portfolio/tablet/image-portfolio-insure.jpg);
+    }
+    
+    .proj{
+        
+        margin-left: 4.375rem;
+        
+        &__txt{
+            
+            font-size: 0.813rem;
+        }
+    }
+    
+    .box-proj-rev__img1{
+        
+        content:url(/images/portfolio/tablet/image-portfolio-bookmark.jpg);
+    }
+    
+    .box-proj-rev__img2{
+        
+        content:url(/images/portfolio/tablet/image-portfolio-fylo.jpg);
+    }
+    
+    .proj-rev{
+        
+        margin-right: 4.375rem;
+        
+        &__txt{
+            
+            font-size: 0.813rem;
+        }
+    } 
+    
+    /* PROJECT - PAGE */
+    
+    .project__img{
+        
+        margin-bottom: 2.5rem;
+    }
+    
+    .pres{
+        
+        flex-direction: column;
+    }
+    
+    .pres-website{
+        
+        max-width: 100%;
+        margin-right: 0;
+        
+        &__title{
+            
+            margin-top: 2rem; 
+        }
+    }
+    
+    .pres-project{
+        
+        max-width: 100%;
+        max-height: fit-content;
+        
+        &__title{
+            
+            margin-top: 2.5rem;
+        }  
+    }
+    
+    /* CONTACT ME */
+    
+    .get-in-touch{
+        
+        flex-direction: column;
+        
+        &__title{
+            
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    .contact-form{
+        
+        flex-direction: column;
+        
+        &__title{
+            
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* MEDIAQUERIES -- MOBILE */ 
+
+@include mobile {
+    
+    
+    /* reset */
+    
+    .container{
+        
+        width: 20rem;
+        position: relative;
+    }
+    
+    /* HEADER */
+
+    .top{
+
+        &__list{
+
+            content: url(/images/icons/hamburger.svg);
+            cursor: pointer;
+        }
+
+        &__list > li{
+
+            display: none;
+        }
+    }
+
+    /* HEADER / NAV MOBILE OPEN - CLOSE */
+
+    .nav-mobile{
+
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 13.938rem;
+        min-height: 11.625rem;
+        background-color: v.$g-dark-blue;
+        z-index: 999;
+        position: absolute;
+        left: 6.063rem;
+        top: 7.5rem;
+
+        &__list{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__list > li{
+
+            list-style: none;
+            margin: 0.75rem;
+        }
+
+        &__list__menu {
+
+            text-decoration: none;
+            color: v.$bg-color;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-size: 0.688rem;
+          
+                &:hover{
+        
+                    color: v.$sligh-cyan;
+                }
+           }
+    }
+
+    .top__list.btn-open-menu{
+
+        content: url(/images/icons/close.svg);
+    }
+
+    .nav-mobile.open-menu{
+
+        visibility: visible;
+    }
+    
+
+    /* HOMEPAGE */
+    
+    .intro {
+        
+        margin-bottom: 6rem;
+        
+        &__box__img{
+            
+            content: url(/images/homepage/mobile/image-homepage-hero.jpg);
+        }
+        
+        &__me{
+            
+            position: relative;
+            width: 100%;
+            height: fit-content; 
+        }
+        
+        &__me__txt{
+            
+            font-size: 2.8rem;
+            margin-bottom: 1.50rem;
+            font-size: 2rem;
+        }
+    }
+    
+    #about-me{
+        
+        display: flex;
+        flex-direction: column;
+        max-height: fit-content;
+        
+        .about-me__box__img{
+            
+            content: url(/images/homepage/mobile/image-homepage-profile.jpg);
+            margin-bottom: 2rem;
+        }
+    }
+    
+    .me{
+        
+        margin-left: 0;
+        max-width: 100%;
+        
+        &__title{
+            
+            margin-top: 2rem;
+        }
+        
+        &__btn{
+            
+            margin-bottom: 2.625rem;
+        }
+    }
+    
+    .contact-me{
+        
+        flex-direction: column;
+       
+        &__title{
+            
+            text-align: center;
+            margin-bottom: 2.5rem;
+            max-width: fit-content;
+        }
+        
+        &__line{
+        
+            display: none;
+        }
+    }
+
+    /* PORTFOLIO */
+
+    .grid-port{
+
+        margin-top: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+   .box-proj{
+
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+
+    &__img1 + &__img2{
+            
+        max-width: 100%;
+        max-height: auto;
+    }
+   }
+
+   .proj{
+
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+
+    &__title{
+
+        margin-top: 1.5rem;
+    }
+
+    &__btn{
+
+        margin-bottom: 1.5rem;
+    }
+   }
+
+   .box-proj-rev{
+
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+
+    &__img1 + &__img2{
+            
+        max-width: 100%;
+        max-height: auto;
+    }
+   }
+
+   .proj-rev{
+
+    margin-right: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+
+    &__title{
+
+        margin-top: 1.5rem;
+    }
+
+    &__btn{
+
+        margin-bottom: 1.5rem;
+    }
+   }
+
+   .contact-me{
+
+    margin-bottom: 5rem;
+
+    &__line{
+
+        width: 100%
+    }
+   }
+
+   .pres-website__txt-color{
+
+    font-size: 0.9rem;
+   }
+
+     /* PREVIEW PROJECT */
+
+     .project__img{
+
+        margin-top: 2.5rem;  
+     }
+
+     .previous-next{
+
+        margin-bottom: 4rem;
+     }
+
+     .previous{
+
+        width: 10.188rem;
+
+        &__title{
+
+            font-size: 1.2rem;
+        }
+        &__txt{
+
+            font-size: 0.7rem;
+        }
+     }
+
+     .next{
+
+        width: 10.188rem;
+
+        &__title{
+
+            font-size: 1.2rem;
+        }
+
+        &__txt{
+
+            font-size: 0.7rem;
+        }
+     }
+
+     /* CONTACT ME */
+
+     .get-in-touch{
+
+        min-width: 100%;
+        margin-top: 2.5rem;
+     }
+
+     .contact-form{
+
+       &__title{
+
+        width: 100%;
+       } 
+     }
+
+     .contact-form .form{
+        min-width: 0;
+    }
+
+
+    /* FOOTER */
+    
+    .bottom{
+        
+        &__box {
+            
+            flex-direction: column;
+            height: 22.125rem;
+            background-color: v.$g-dark-blue;
+            
+            &__img{
+                
+                margin-top:3.5rem;
+                margin-bottom: 2.5rem
+            }
+            
+            &__img-list{
+                
+                flex-direction: column; 
+            }
+        }
+        
+        &__end-list{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__end-list > li{
+            
+            display: flex;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+        
+        &__link{
+            
+            display: flex;
+            align-items: center;
+            
+            &--logo{
+                
+                margin: 0 0.469rem 3rem 0.469rem
+            }
+        }
+    }
+    
+    .footer-side{
+        
+        height: 22.125rem;
+        bottom: -17.125rem; 
+    }
+}

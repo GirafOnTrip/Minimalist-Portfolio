@@ -1,0 +1,968 @@
+/* MAIN PARAM */
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: "Public Sans", Helvetica, Arial, sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  max-width: 1110px;
+  margin: auto 10.313rem;
+}
+
+/* HEADER */
+.top {
+  padding-top: 4rem;
+}
+.top__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top__list > li {
+  display: inline;
+  list-style: none;
+  padding-left: 2.5rem;
+}
+.top__list__menu {
+  text-decoration: none;
+  color: hsl(245deg, 10%, 22%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.75rem;
+}
+.top__list__menu:hover {
+  color: hsl(167deg, 36%, 54%);
+}
+
+.nav-mobile {
+  display: none;
+}
+
+/* MAIN HOMEPAGE */
+/* Start param section intro */
+.intro {
+  position: relative;
+  margin-top: 3.375rem;
+  margin-bottom: 9.375rem;
+}
+.intro__box__img {
+  width: 100%;
+  max-width: 1110px;
+  height: auto;
+}
+.intro__me {
+  position: absolute;
+  width: 27.813rem;
+  height: 22.313rem;
+  bottom: 0.25rem;
+  background-color: hsl(0deg, 0%, 98%);
+}
+.intro__me__txt {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 1;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  padding: 3.438rem 3rem 3.438rem 0;
+}
+.intro__me__box {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.intro__me__box:hover > img {
+  background-color: #32a390;
+}
+.intro__me__box:hover > img + button {
+  background-color: hsl(167deg, 36%, 54%);
+}
+.intro__me__logo {
+  background: #143445;
+  padding: 1.063rem;
+}
+.intro__me__btn {
+  padding: 1.063rem 2.5rem;
+  background-color: hsl(205deg, 41%, 21%);
+  border: none;
+}
+.intro__me__btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 98%);
+  letter-spacing: 0.1rem;
+}
+
+/* End param section intro */
+/* Start param section about-me */
+#about-me {
+  display: flex;
+  max-width: 63.438rem;
+  max-height: 37.5rem;
+  margin-bottom: 9.375rem;
+}
+#about-me .about-me__box {
+  max-width: 33.75rem;
+  max-height: 37.5rem;
+}
+#about-me .about-me__box__img {
+  width: 100%;
+  height: auto;
+}
+
+.me {
+  max-width: 21.875rem;
+  height: fit-content;
+  background-color: hsl(0deg, 0%, 98%);
+  margin-left: 7.813rem;
+  border-top: 1px solid hsl(240deg, 2%, 92%);
+  border-bottom: 1px solid hsl(240deg, 2%, 92%);
+}
+.me__title {
+  margin-top: 3.125rem;
+  margin-bottom: 1.875rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+}
+.me__txt {
+  line-height: 1.8;
+  margin-bottom: 3.375rem;
+  color: #5b5a64;
+}
+.me__btn {
+  background: hsl(0deg, 0%, 98%);
+  padding: 0.938rem 2rem;
+  border: 1px solid #5b5a64;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 1.875rem;
+}
+.me__btn:hover {
+  background-color: hsl(245deg, 10%, 22%);
+  color: hsl(0deg, 0%, 98%);
+}
+
+/* End param section about-me */
+/* END MAIN HOMEPAGE */
+/* CONTACT ME */
+/* Start param section contact me */
+.contact-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9.375rem;
+  max-width: max-content;
+}
+.contact-me__title {
+  max-width: auto;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+}
+.contact-me__line {
+  width: 33.375rem;
+  height: 1px;
+  background-color: hsl(240deg, 2%, 92%);
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.contact-me__btn {
+  background: hsl(0deg, 0%, 98%);
+  padding: 0.938rem 2rem;
+  border: 1px solid #5b5a64;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-me__btn:hover {
+  background-color: hsl(245deg, 10%, 22%);
+  color: hsl(0deg, 0%, 98%);
+}
+
+/* End param section contact me */
+/* FOOTER */
+.bottom {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  background-color: hsl(245deg, 10%, 22%);
+}
+.bottom__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.bottom__box__img {
+  filter: invert(1);
+}
+.bottom__box__img-list {
+  display: flex;
+  align-items: center;
+}
+.bottom__end-list > li {
+  display: inline;
+  list-style: none;
+  padding-left: 2.5rem;
+}
+.bottom__end-list__menu {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 98%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.75rem;
+}
+.bottom__link--logo {
+  margin-left: 1rem;
+  filter: invert(1);
+}
+
+.footer-side {
+  height: 80px;
+  width: 100%;
+  background-color: hsl(245deg, 10%, 22%);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* START MAIN PORTFOLIO INDEX */
+/* Start Grid Port-Index */
+.grid-port {
+  display: grid;
+  grid-template-rows: repeat 4, 1fr;
+  gap: 5rem;
+  margin-top: 5.875rem;
+  margin-bottom: 9.375rem;
+}
+
+/* End Grid Port-Index */
+/* Start Preview Proj 1 & 3 */
+.box-proj {
+  display: flex;
+  max-width: 63.438rem;
+  max-height: 31.25rem;
+}
+.box-proj__img1 + .box-proj__img2 {
+  max-width: 33.75rem;
+  max-height: 37.5rem;
+}
+
+.proj {
+  max-width: 21.875rem;
+  background-color: hsl(0deg, 0%, 98%);
+  margin-left: 7.813rem;
+  border-top: 1px solid hsl(240deg, 2%, 92%);
+  border-bottom: 1px solid hsl(240deg, 2%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.proj__title {
+  margin-bottom: 1.75rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+}
+.proj__txt {
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  color: #5b5a64;
+}
+
+.proj__btn {
+  background: hsl(0deg, 0%, 98%);
+  padding: 0.938rem 2rem;
+  border: 1px solid #5b5a64;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.proj__btn:hover {
+  background-color: hsl(245deg, 10%, 22%);
+  color: hsl(0deg, 0%, 98%);
+}
+
+/* End Preview Proj 1 & 3 */
+/* Start Preview Proj 2 & 4 */
+.box-proj-rev {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-self: end;
+  max-width: 63.438rem;
+  max-height: 31.25rem;
+}
+.box-proj-rev__img1 + .box-proj-rev__img2 {
+  max-width: 33.75rem;
+  max-height: 37.5rem;
+}
+
+.proj-rev {
+  max-width: 21.875rem;
+  background-color: hsl(0deg, 0%, 98%);
+  margin-right: 7.813rem;
+  border-top: 1px solid hsl(240deg, 2%, 92%);
+  border-bottom: 1px solid hsl(240deg, 2%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.proj-rev__title {
+  margin-bottom: 1.75rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+}
+.proj-rev__txt {
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  color: #5b5a64;
+}
+
+.proj-rev__btn {
+  background: hsl(0deg, 0%, 98%);
+  padding: 0.938rem 2rem;
+  border: 1px solid #5b5a64;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.proj-rev__btn:hover {
+  background-color: hsl(245deg, 10%, 22%);
+  color: hsl(0deg, 0%, 98%);
+}
+
+/* End Preview Proj 2 & 4 */
+/* END MAIN PORTFOLIO INDEX */
+/* START PROJECT PAGE */
+/* Start param fisrt img section */
+.project__img {
+  width: 100%;
+  height: auto;
+  margin-top: 5.875rem;
+  margin-bottom: 7.188rem;
+}
+
+/* End param fisrt img section */
+/* Start param project presentation section */
+.pres {
+  display: flex;
+  max-width: fit-content;
+}
+
+.pres-website {
+  max-width: 21.875rem;
+  height: fit-content;
+  margin-right: 7.813rem;
+  border-top: 1px solid hsl(240deg, 2%, 92%);
+  border-bottom: 1px solid hsl(240deg, 2%, 92%);
+}
+.pres-website__title {
+  margin-top: 3.125rem;
+  margin-bottom: 1.875rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+}
+.pres-website__txt {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #5b5a64;
+}
+.pres-website__txt-color {
+  color: hsl(167deg, 36%, 54%);
+  line-height: 3;
+}
+
+.pres-website__btn {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background: hsl(0deg, 0%, 98%);
+  padding: 0.938rem 2rem;
+  border: 1px solid #5b5a64;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pres-website__btn:hover {
+  background-color: hsl(245deg, 10%, 22%);
+  color: hsl(0deg, 0%, 98%);
+}
+
+.pres-project {
+  max-width: 39.688rem;
+  max-height: 74.5rem;
+}
+.pres-project__title {
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+  font-size: 1.875rem;
+  margin-bottom: 1.75rem;
+}
+.pres-project__txt {
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+  color: #5b5a64;
+}
+.pres-project__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* End param project presentation section */
+/* Start next-previous nav */
+.previous-next {
+  display: flex;
+  align-items: center;
+  height: 8.188rem;
+  margin-top: 4rem;
+  margin-bottom: 7.188rem;
+  border-top: 1px solid hsl(240deg, 2%, 92%);
+  border-bottom: 1px solid hsl(240deg, 2%, 92%);
+}
+
+.previous {
+  display: flex;
+  align-items: center;
+  height: 8.188rem;
+  width: 100%;
+  border-right: 1px solid hsl(240deg, 2%, 92%);
+}
+.previous img:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease-out;
+}
+.previous ul > li {
+  list-style: none;
+  margin-left: 2rem;
+}
+.previous__title {
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+  font-size: 1.875rem;
+}
+.previous__txt {
+  line-height: 1.5;
+  color: #5b5a64;
+}
+
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 8.188rem;
+  width: 100%;
+}
+.next img:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease-out;
+}
+.next ul > li {
+  list-style: none;
+  margin-right: 2rem;
+  text-align: right;
+}
+.next__title {
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+  font-size: 1.875rem;
+}
+.next__txt {
+  line-height: 1.5;
+  color: #5b5a64;
+}
+
+/* End next-previous nav */
+/* END PROJECT PAGE */
+/* CONTACT-ME PAGE */
+/* Start get-in-touch section */
+.get-in-touch {
+  display: flex;
+  min-height: 22.125rem;
+  min-width: fit-content;
+  border-top: 1px solid hsl(240deg, 2%, 92%);
+  border-bottom: 1px solid hsl(240deg, 2%, 92%);
+  margin-top: 5.875rem;
+  padding-top: 3rem;
+  margin-bottom: 2.938rem;
+}
+.get-in-touch__title {
+  max-height: fit-content;
+  width: 29.688rem;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+  font-size: 2.5rem;
+}
+
+.git {
+  max-height: fit-content;
+  max-width: 39.688rem;
+}
+.git__txt {
+  color: #5b5a64;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+.git__link {
+  margin-bottom: 3rem;
+}
+.git__link--logo {
+  margin-right: 1rem;
+}
+.git__link--logo:hover {
+  transform: scale(1.4);
+  transition: 0.3s;
+}
+
+/* End get-in-touch section */
+/* Start form section */
+.contact-form {
+  display: flex;
+}
+.contact-form__title {
+  max-height: fit-content;
+  width: 29.688rem;
+  font-family: "Ibarra Real Nova", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: hsl(245deg, 10%, 22%);
+  font-size: 2.5rem;
+}
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+  min-width: 39.688rem;
+}
+.contact-form .form__label0 {
+  color: #5b5a64;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.contact-form .form__label {
+  color: #5b5a64;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+.contact-form .form__input1, .contact-form .form__input2 {
+  min-height: 3rem;
+  background-color: hsl(240deg, 2%, 92%);
+  border: none;
+  font-size: 0.938rem;
+  padding-left: 1rem;
+}
+.contact-form .form__error1, .contact-form .form__error2, .contact-form .form__error3 {
+  color: red;
+  padding-top: 0.625rem;
+  display: none;
+}
+.contact-form .form__btn {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.113rem;
+  color: hsl(0deg, 0%, 98%);
+  width: 12.5rem;
+  height: 3rem;
+  padding: 1.063rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 6.813rem;
+  background-color: hsl(205deg, 41%, 21%);
+  cursor: pointer;
+}
+
+textarea {
+  font-size: 0.938rem;
+  background: hsl(240deg, 2%, 92%);
+  border: none;
+  height: 6rem;
+  padding: 1rem;
+  resize: none;
+}
+
+/* End form section */
+/* END CONTACT-ME PAGE */
+/* MEDIAQUERIES -- TABLET */
+@media screen and (max-width: 1135px) {
+  /* reset */
+  .container {
+    width: 680px;
+  }
+
+  /* HOMEPAGE */
+  .intro__box__img {
+    content: url(/images/homepage/tablet/image-homepage-hero.jpg);
+  }
+  .intro__me {
+    width: 38.375rem;
+    height: 19.375rem;
+  }
+
+  #about-me {
+    margin-bottom: 6.25rem;
+  }
+  #about-me .about-me__box__img {
+    content: url(/images/homepage/tablet/image-homepage-profile.jpg);
+  }
+
+  .me {
+    margin-left: 4.375rem;
+  }
+  .me__txt {
+    margin-bottom: 2.2rem;
+  }
+
+  /* PORTFOLIO */
+  .box-proj__img1 {
+    content: url(/images/portfolio/tablet/image-portfolio-manage.jpg);
+  }
+
+  .box-proj__img2 {
+    content: url(/images/portfolio/tablet/image-portfolio-insure.jpg);
+  }
+
+  .proj {
+    margin-left: 4.375rem;
+  }
+  .proj__txt {
+    font-size: 0.813rem;
+  }
+
+  .box-proj-rev__img1 {
+    content: url(/images/portfolio/tablet/image-portfolio-bookmark.jpg);
+  }
+
+  .box-proj-rev__img2 {
+    content: url(/images/portfolio/tablet/image-portfolio-fylo.jpg);
+  }
+
+  .proj-rev {
+    margin-right: 4.375rem;
+  }
+  .proj-rev__txt {
+    font-size: 0.813rem;
+  }
+
+  /* PROJECT - PAGE */
+  .project__img {
+    margin-bottom: 2.5rem;
+  }
+
+  .pres {
+    flex-direction: column;
+  }
+
+  .pres-website {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .pres-website__title {
+    margin-top: 2rem;
+  }
+
+  .pres-project {
+    max-width: 100%;
+    max-height: fit-content;
+  }
+  .pres-project__title {
+    margin-top: 2.5rem;
+  }
+
+  /* CONTACT ME */
+  .get-in-touch {
+    flex-direction: column;
+  }
+  .get-in-touch__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+  .contact-form__title {
+    margin-bottom: 2rem;
+  }
+}
+/* MEDIAQUERIES -- MOBILE */
+@media screen and (max-width: 700px) {
+  /* reset */
+  .container {
+    width: 20rem;
+    position: relative;
+  }
+
+  /* HEADER */
+  .top__list {
+    content: url(/images/icons/hamburger.svg);
+    cursor: pointer;
+  }
+  .top__list > li {
+    display: none;
+  }
+
+  /* HEADER / NAV MOBILE OPEN - CLOSE */
+  .nav-mobile {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 13.938rem;
+    min-height: 11.625rem;
+    background-color: hsl(245deg, 10%, 22%);
+    z-index: 999;
+    position: absolute;
+    left: 6.063rem;
+    top: 7.5rem;
+  }
+  .nav-mobile__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-mobile__list > li {
+    list-style: none;
+    margin: 0.75rem;
+  }
+  .nav-mobile__list__menu {
+    text-decoration: none;
+    color: hsl(0deg, 0%, 98%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.688rem;
+  }
+  .nav-mobile__list__menu:hover {
+    color: hsl(167deg, 36%, 54%);
+  }
+
+  .top__list.btn-open-menu {
+    content: url(/images/icons/close.svg);
+  }
+
+  .nav-mobile.open-menu {
+    visibility: visible;
+  }
+
+  /* HOMEPAGE */
+  .intro {
+    margin-bottom: 6rem;
+  }
+  .intro__box__img {
+    content: url(/images/homepage/mobile/image-homepage-hero.jpg);
+  }
+  .intro__me {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+  }
+  .intro__me__txt {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+  }
+  #about-me .about-me__box__img {
+    content: url(/images/homepage/mobile/image-homepage-profile.jpg);
+    margin-bottom: 2rem;
+  }
+
+  .me {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .me__title {
+    margin-top: 2rem;
+  }
+  .me__btn {
+    margin-bottom: 2.625rem;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+  .contact-me__title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    max-width: fit-content;
+  }
+  .contact-me__line {
+    display: none;
+  }
+
+  /* PORTFOLIO */
+  .grid-port {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .box-proj {
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .box-proj__img1 + .box-proj__img2 {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .proj {
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+  .proj__title {
+    margin-top: 1.5rem;
+  }
+  .proj__btn {
+    margin-bottom: 1.5rem;
+  }
+
+  .box-proj-rev {
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .box-proj-rev__img1 + .box-proj-rev__img2 {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .proj-rev {
+    margin-right: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+  .proj-rev__title {
+    margin-top: 1.5rem;
+  }
+  .proj-rev__btn {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-me {
+    margin-bottom: 5rem;
+  }
+  .contact-me__line {
+    width: 100%;
+  }
+
+  .pres-website__txt-color {
+    font-size: 0.9rem;
+  }
+
+  /* PREVIEW PROJECT */
+  .project__img {
+    margin-top: 2.5rem;
+  }
+
+  .previous-next {
+    margin-bottom: 4rem;
+  }
+
+  .previous {
+    width: 10.188rem;
+  }
+  .previous__title {
+    font-size: 1.2rem;
+  }
+  .previous__txt {
+    font-size: 0.7rem;
+  }
+
+  .next {
+    width: 10.188rem;
+  }
+  .next__title {
+    font-size: 1.2rem;
+  }
+  .next__txt {
+    font-size: 0.7rem;
+  }
+
+  /* CONTACT ME */
+  .get-in-touch {
+    min-width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .contact-form__title {
+    width: 100%;
+  }
+
+  .contact-form .form {
+    min-width: 0;
+  }
+
+  /* FOOTER */
+  .bottom__box {
+    flex-direction: column;
+    height: 22.125rem;
+    background-color: hsl(245deg, 10%, 22%);
+  }
+  .bottom__box__img {
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .bottom__box__img-list {
+    flex-direction: column;
+  }
+  .bottom__end-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom__end-list > li {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+  .bottom__link {
+    display: flex;
+    align-items: center;
+  }
+  .bottom__link--logo {
+    margin: 0 0.469rem 3rem 0.469rem;
+  }
+
+  .footer-side {
+    height: 22.125rem;
+    bottom: -17.125rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

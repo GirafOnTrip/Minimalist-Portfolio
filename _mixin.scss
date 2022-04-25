@@ -1,0 +1,316 @@
+@use 'variables' as v;
+
+
+// FLEXBOX
+
+@mixin flexbox{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// BUTTON
+
+@mixin btn{
+    
+    background: v.$bg-color; 
+    padding: 0.938rem 2rem;
+    border: 1px solid v.$grey-color-txt;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &:hover{
+        
+        background-color: v.$g-dark-blue;
+        color: v.$bg-color;  
+    }
+}
+
+// BOX PORTFOLIO
+
+@mixin portfolio{
+    
+    .box-proj{
+        
+        display: flex;
+        max-width: 63.438rem;
+        max-height: 31.25rem;
+        
+        &__img1 + &__img2{
+            
+            max-width: 33.75rem;
+            max-height: 37.5rem;
+        }
+    }  
+    
+    .proj{
+        
+        max-width: 21.875rem;
+        background-color: v.$bg-color; 
+        margin-left: 7.813rem; 
+        border-top: 1px solid v.$light-grey;
+        border-bottom: 1px solid v.$light-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &__title{
+            
+            margin-bottom: 1.75rem; 
+            font-size: 2.5rem;
+            text-transform: capitalize;
+            font-family: v.$font-title;
+            font-weight: 600;
+            color: v.$g-dark-blue;
+        }
+        
+        &__txt{
+            
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            color: v.$grey-color-txt;
+        }
+    }
+}
+
+// BOX PORTFOLIO REVERSE
+
+@mixin portfolio-reverse{
+    
+    .box-proj-rev{
+        
+        display: flex;
+        flex-direction: row-reverse;
+        justify-self: end;
+        max-width: 63.438rem;
+        max-height: 31.25rem;
+        
+        &__img1 + &__img2{
+            
+            max-width: 33.75rem;
+            max-height: 37.5rem;
+        }
+    }   
+    
+    .proj-rev{
+        
+        max-width: 21.875rem;
+        background-color: v.$bg-color; 
+        margin-right: 7.813rem; 
+        border-top: 1px solid v.$light-grey;
+        border-bottom: 1px solid v.$light-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &__title{
+            
+            margin-bottom: 1.75rem; 
+            font-size: 2.5rem;
+            text-transform: capitalize;
+            font-family: v.$font-title;
+            font-weight: 600;
+            color: v.$g-dark-blue;
+        }
+        
+        &__txt{
+            
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            color: v.$grey-color-txt;
+        }
+    }
+}
+
+//  NEXT-PREVIOUS NAV
+
+
+@mixin next-previous {
+    
+    .previous-next{
+        
+        display: flex;
+        align-items: center;
+        height: 8.188rem;
+        margin-top: 4rem;
+        margin-bottom: 7.188rem;
+        border-top: 1px solid v.$light-grey;
+        border-bottom: 1px solid v.$light-grey;
+    }
+    
+    .previous{
+        
+        display: flex;
+        align-items: center;
+        height: 8.188rem;
+        width: 100%;
+        border-right: 1px solid v.$light-grey;
+
+        img:hover{
+
+            transform: scale(1.50);
+            transition: 0.3s ease-out;
+        }
+
+        & ul > li{
+            
+            list-style: none;
+            margin-left: 2rem;
+        }
+
+        &__title{
+
+            font-family: v.$font-title;
+            font-weight: 600;
+            color: v.$g-dark-blue;
+            font-size: 1.875rem;
+        }
+
+        &__txt{
+
+            line-height: 1.5;
+            color: v.$grey-color-txt;
+        }
+    }
+    
+    .next{
+        
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 8.188rem;
+        width: 100%; 
+
+        img:hover{
+
+            transform: scale(1.50);
+            transition: 0.3s ease-out;
+        }
+        
+        & ul > li{
+            
+            list-style: none;
+            margin-right: 2rem;
+            text-align: right;
+        }
+
+        &__title{
+
+            font-family: v.$font-title;
+            font-weight: 600;
+            color: v.$g-dark-blue;
+            font-size: 1.875rem;
+        }
+
+        &__txt{
+
+            line-height: 1.5;
+            color: v.$grey-color-txt;
+            
+        }
+    }
+}
+
+
+// CONTACT
+
+@mixin contact-bottom{
+    
+    .contact-me{
+        
+        display: flex;
+        align-items: center;
+        margin-bottom: 9.375rem;
+        max-width: max-content;
+        
+        &__title{
+            
+            max-width: auto;
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-family: v.$font-title;
+        }
+        
+        &__line{
+            
+            width: 33.375rem;
+            height: 1px;
+            background-color: v.$light-grey;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+    }
+}
+
+// FOOTER
+
+@mixin footer{
+    
+    .bottom {
+        
+        display: flex;
+        height: 5rem;
+        width: 100%;
+        background-color: v.$g-dark-blue;
+       
+        &__box{
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        
+            &__img{
+
+                filter: invert(1);
+            }
+        }
+        
+        &__box__img-list{
+            
+            display: flex;
+            align-items: center;
+        }
+        
+        
+        &__end-list > li{
+            
+            display: inline;
+            list-style: none;
+            padding-left: 2.5rem;
+        }
+        
+        &__end-list__menu{
+            
+            text-decoration: none;
+            color: v.$bg-color;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-size: 0.75rem;
+        }
+        
+        &__link{
+            
+            
+            &--logo{
+                
+                margin-left: 1rem;
+                filter: invert(1);
+            }  
+        }
+    }
+
+    .footer-side{
+
+        height: 80px;
+        width: 100%;
+        background-color: v.$g-dark-blue;
+        position: absolute;
+        bottom: 0;
+        z-index:-1
+    }
+}

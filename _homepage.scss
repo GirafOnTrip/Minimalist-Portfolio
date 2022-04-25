@@ -1,0 +1,163 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+
+/* MAIN HOMEPAGE */
+
+/* Start param section intro */
+
+.intro {
+
+    position:relative;
+    margin-top: 3.375rem;
+    margin-bottom: 9.375rem;
+
+    &__box__img{
+
+        width: 100%;
+        max-width: 1110px;
+        height: auto;
+    }
+
+    &__me{
+
+        position: absolute;
+
+        width: 27.813rem;
+        height: 22.313rem;
+        bottom: 0.25rem;
+        background-color: v.$bg-color;
+    }
+
+    &__me__txt{
+
+        font-size: 3.125rem;
+        font-weight: 600;
+        line-height: 1;
+        font-family: v.$font-title;
+        padding: 3.438rem 3rem 3.438rem 0;
+    }
+
+    &__me__box{
+
+        position: absolute;
+        bottom: 0;
+        display: flex;
+
+        &:hover > img{
+
+            background-color: v.$dark-cyan;
+            
+            & + button{
+
+                background-color: v.$sligh-cyan;
+            }
+        }
+    }
+
+    &__me__logo{
+
+        background: v.$dark-blue-logo;
+        padding: 1.063rem;
+    }
+
+    &__me__btn{
+      
+        padding: 1.063rem 2.5rem;
+        background-color: v.$dark-blue-btn;
+        border: none;
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: v.$bg-color;
+            letter-spacing: 0.1rem;            
+        }
+    }
+}
+
+/* End param section intro */
+/* Start param section about-me */
+
+#about-me{
+
+    display: flex;
+    max-width: 63.438rem;
+    max-height: 37.5rem;
+    margin-bottom: 9.375rem;
+
+    .about-me__box{
+
+        max-width: 33.75rem;
+        max-height: 37.5rem;
+
+        &__img{
+
+            width: 100%;
+            height: auto;
+        }
+    }
+};   
+
+.me{
+
+    max-width: 21.875rem;
+    height: fit-content;
+    background-color: v.$bg-color; 
+    margin-left: 7.813rem; 
+    border-top: 1px solid v.$light-grey;
+    border-bottom: 1px solid v.$light-grey;
+    
+
+    &__title{
+        
+       margin-top: 3.125rem;
+       margin-bottom: 1.875rem; 
+       font-size: 2.5rem;
+       text-transform: capitalize;
+       font-family: v.$font-title;
+       font-weight: 600;
+       color: v.$g-dark-blue;
+    }
+
+    &__txt{
+
+        line-height: 1.8;
+        margin-bottom: 3.375rem;
+        color: v.$grey-color-txt;
+    }
+
+    &__btn{
+
+        @include m.btn;
+        margin-bottom: 1.875rem;
+        
+    }
+};
+
+/* End param section about-me */
+/* END MAIN HOMEPAGE */
+/* CONTACT ME */
+/* Start param section contact me */
+
+@include m.contact-bottom;
+
+.contact-me__btn{
+
+    @include m.btn;
+}
+
+/* End param section contact me */
+
+
+
+
+
+
+
+
+
+
+
+
+

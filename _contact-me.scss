@@ -1,0 +1,162 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+
+/* CONTACT-ME PAGE */
+
+/* Start get-in-touch section */
+
+.get-in-touch{
+
+    display:flex;
+    min-height: 22.125rem;
+    min-width: fit-content;
+    border-top: 1px solid v.$light-grey;
+    border-bottom: 1px solid v.$light-grey;
+    margin-top: 5.875rem;
+    padding-top: 3rem;
+    margin-bottom: 2.938rem;
+
+    &__title{
+
+        max-height: fit-content;
+        width: 29.688rem;
+        font-family: v.$font-title;
+        font-weight: 600;
+        color: v.$g-dark-blue;
+        font-size: 2.5rem;
+    }
+}
+
+.git{
+
+    max-height: fit-content;
+    max-width: 39.688rem;
+
+    &__txt{
+
+        color: v.$grey-color-txt;
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+    }
+
+    &__link{
+
+        margin-bottom: 3rem;
+
+        &--logo{
+
+        margin-right: 1rem;
+         
+        &:hover{
+
+            transform: scale(1.40);
+            transition: 0.3s ;
+        }
+
+        }
+    }
+}
+
+/* End get-in-touch section */
+/* Start form section */
+
+.contact-form {
+
+    display: flex;
+      
+    &__title{
+
+        max-height: fit-content;
+        width: 29.688rem;
+        font-family: v.$font-title;
+        font-weight: 600;
+        color: v.$g-dark-blue;
+        font-size: 2.5rem;
+    }
+
+
+    .form{
+
+        display: flex;
+        flex-direction: column;
+        min-width: 39.688rem;
+        
+    
+        &__label0{
+
+            color: v.$grey-color-txt;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        &__label{
+
+            color: v.$grey-color-txt;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        &__input1, &__input2 {
+
+            min-height: 3rem;
+            background-color: v.$light-grey;
+            border: none;
+            font-size: 0.938rem;
+            padding-left: 1rem;
+        }
+
+        &__error1, &__error2, &__error3{
+
+            color: red;;
+            padding-top: 0.625rem;
+            display:none;
+        }
+
+        &__btn{
+
+            border: none;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.113rem;
+            color: v.$bg-color;
+
+            width: 12.5rem;
+            height: 3rem;
+            padding: 1.063rem 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 6.813rem;
+
+            background-color: v.$dark-blue-btn;
+            cursor: pointer; 
+        }
+    }
+}
+
+textarea{
+
+    font-size: 0.938rem;
+    background: v.$light-grey;
+    border: none;
+    height: 6rem;
+    padding: 1rem;
+    resize: none;  
+}
+
+/* End form section */
+/* END CONTACT-ME PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
