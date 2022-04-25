@@ -159,6 +159,7 @@ body {
   max-width: fit-content;
   cursor: pointer;
   margin-bottom: 1.875rem;
+  display: inline-block;
 }
 .me__btn:hover {
   background-color: hsl(245deg, 10%, 22%);
