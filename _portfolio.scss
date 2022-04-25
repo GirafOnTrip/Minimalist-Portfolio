@@ -23,6 +23,7 @@
 
 .proj__btn{
 
+    display: block;
     @include m.btn;
 }
 
@@ -34,6 +35,7 @@
 
 .proj-rev__btn{
 
+    display: block;
     @include m.btn;
 }
 

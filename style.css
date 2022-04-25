@@ -156,6 +156,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  max-width: fit-content;
   cursor: pointer;
   margin-bottom: 1.875rem;
 }
@@ -198,6 +199,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  max-width: fit-content;
   cursor: pointer;
 }
 .contact-me__btn:hover {
@@ -299,6 +301,7 @@ body {
 }
 
 .proj__btn {
+  display: block;
   background: hsl(0deg, 0%, 98%);
   color: #5b5a64;
   padding: 0.938rem 2rem;
@@ -308,6 +311,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  max-width: fit-content;
   cursor: pointer;
 }
 .proj__btn:hover {
@@ -354,6 +358,7 @@ body {
 }
 
 .proj-rev__btn {
+  display: block;
   background: hsl(0deg, 0%, 98%);
   color: #5b5a64;
   padding: 0.938rem 2rem;
@@ -363,6 +368,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  max-width: fit-content;
   cursor: pointer;
 }
 .proj-rev__btn:hover {
@@ -427,6 +433,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  max-width: fit-content;
   cursor: pointer;
 }
 .pres-website__btn:hover {
